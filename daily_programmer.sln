@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "daily_programmer", "daily_programmer\daily_programmer.vcxproj", "{F0EA7C08-C06E-4975-8E2A-7A15D92F45FF}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "garland_words", "garland_words\garland_words.vcxproj", "{DF3F1B26-53A4-46EC-BD6B-7FE4BB067D6C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "garland_words_tests", "sourceTest\sourceTest.vcxproj", "{54FF638F-F3C1-479A-8A90-9C2827FEF16E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +11,14 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F0EA7C08-C06E-4975-8E2A-7A15D92F45FF}.Debug|Win32.ActiveCfg = Debug|Win32
-		{F0EA7C08-C06E-4975-8E2A-7A15D92F45FF}.Debug|Win32.Build.0 = Debug|Win32
-		{F0EA7C08-C06E-4975-8E2A-7A15D92F45FF}.Release|Win32.ActiveCfg = Release|Win32
-		{F0EA7C08-C06E-4975-8E2A-7A15D92F45FF}.Release|Win32.Build.0 = Release|Win32
+		{DF3F1B26-53A4-46EC-BD6B-7FE4BB067D6C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DF3F1B26-53A4-46EC-BD6B-7FE4BB067D6C}.Debug|Win32.Build.0 = Debug|Win32
+		{DF3F1B26-53A4-46EC-BD6B-7FE4BB067D6C}.Release|Win32.ActiveCfg = Release|Win32
+		{DF3F1B26-53A4-46EC-BD6B-7FE4BB067D6C}.Release|Win32.Build.0 = Release|Win32
+		{54FF638F-F3C1-479A-8A90-9C2827FEF16E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54FF638F-F3C1-479A-8A90-9C2827FEF16E}.Debug|Win32.Build.0 = Debug|Win32
+		{54FF638F-F3C1-479A-8A90-9C2827FEF16E}.Release|Win32.ActiveCfg = Release|Win32
+		{54FF638F-F3C1-479A-8A90-9C2827FEF16E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
