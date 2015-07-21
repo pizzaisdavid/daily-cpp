@@ -25,17 +25,17 @@ int getGarland(std::string word)
 
 bool isLetters(std::string text)
 {
-	std::regex ALPHABET ("[A-Za-z]");
+	std::regex ALPHABET ("[A-Za-z]+");
 	return std::regex_match(text, ALPHABET);
 }
 
 bool isLowercase(std::string text)
 {
-	std::regex ALPHABET ("[a-z]");
-	return std::regex_match(text, ALPHABET);
+	std::regex LOWERCASE_ALPHABET ("[a-z]+");
+	return std::regex_match(text, LOWERCASE_ALPHABET);
 }
 
 int getDegrees(std::string word)
 {
-
+	return 1;
 }
