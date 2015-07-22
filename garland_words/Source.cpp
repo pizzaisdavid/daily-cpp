@@ -23,7 +23,8 @@ int getGarland(std::string word)
 	}
 }
 
-bool isLetters(std::string text)
+// TODO make this a member function of garland.
+bool areLetters(std::string text)
 {
 	std::regex ALPHABET ("[A-Za-z]+");
 	return std::regex_match(text, ALPHABET);
