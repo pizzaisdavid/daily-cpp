@@ -8,22 +8,6 @@ TEST_CLASS(GarlandTests)
 {
 public:
 
-	TEST_METHOD(parseSubstringfromStart_alphabetAnd3_returnsABC)
-	{
-		std::string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		std::string expected = "ABC";
-		std::string result = parseSubstringfromStart(ALPHABET, 3);
-		Assert::AreEqual(expected, result);
-	}
-
-	TEST_METHOD(parseSubstringfromEnd_alphabetAnd3_returnsXYZ)
-	{
-		std::string ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		std::string expected = "XYZ";
-		std::string result = parseSubstringfromEnd(ALPHABET, 3);
-		Assert::AreEqual(expected, result);
-	}
-
 	TEST_METHOD(isSubstringBeginningAndEndingSame_blankString_returnsTrue)
 	{
 		Assert::IsTrue(isSubstringBeginningAndEndingSame("", 0));

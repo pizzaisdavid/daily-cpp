@@ -1,11 +1,10 @@
 #include <string>
 #include <math.h>
+#include "StringParser.h"
 
 int garland(std::string);
 int getRoundedUpHalfLength(std::string);
 bool isSubstringBeginningAndEndingSame(std::string, int);
-std::string parseSubstringfromStart(std::string, int);
-std::string parseSubstringfromEnd(std::string, int);
 
 
 int garland(std::string word)
@@ -32,19 +31,7 @@ int getRoundedUpHalfLength(std::string text)
 
 bool isSubstringBeginningAndEndingSame(std::string text, int length)
 {
-	std::string beginning = parseSubstringfromStart(text, length);
-	std::string ending = parseSubstringfromEnd(text, length);
+	std::string beginning = StringParser::fromStart(text, length);
+	std::string ending = StringParser::fromEnd(text, length);
 	return beginning == ending;
-}
-
-std::string parseSubstringfromStart(std::string text, int length)
-{
-	const int START_INDEX = 0;
-	return text.substr(START_INDEX, length);
-}
-
-std::string parseSubstringfromEnd(std::string text, int length)
-{
-	int startIndex = text.length() - length;
-	return text.substr(startIndex);
 }
