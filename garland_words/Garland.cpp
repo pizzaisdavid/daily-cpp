@@ -10,8 +10,8 @@ bool isSubstringBeginningAndEndingSame(std::string, int);
 int garland(std::string word)
 {
 	const int NO_DEGREE = 0;
-	int halfLengthOfWord = getRoundedUpHalfLength(word);
-	for (int i = halfLengthOfWord; i > 0; i--)
+	int halfwordLength = getRoundedUpHalfLength(word);
+	for (int i = halfwordLength; i > 0; i--)
 	{
 		if (isSubstringBeginningAndEndingSame(word, i))
 		{
@@ -23,10 +23,10 @@ int garland(std::string word)
 
 int getRoundedUpHalfLength(std::string text)
 {
-	int lengthOfWord = text.length();
-	double halfLength = lengthOfWord * 0.5;
-	double halfLengthRoundUp = ceil(halfLength);
-	return static_cast<int>(halfLengthRoundUp);
+	int wordLength = text.length();
+	double halfLength = wordLength / 2.0;
+	double halfLengthRounded = ceil(halfLength);
+	return static_cast<int>(halfLengthRounded);
 }
 
 bool isSubstringBeginningAndEndingSame(std::string text, int length)
